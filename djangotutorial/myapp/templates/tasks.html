@@ -1,14 +1,20 @@
 <h1>Tasks</h1>
 
+{# note: esta es una tarea #}
+
 {% for task in tasks %}
 
 <article>
-	<h2>{{ task.title }}</h2>
+	<h2>{% if task.done == False %} 🕑 {% else %} ✅ {% endif %} {{ task.title }}</h2>
 	<p>{{ task.description }}</p>
 	<p>project: {{ task.project.name }}</p>
+
 </article>
 <button>
 	Delete
+</button>
+<button>
+	✅
 </button>
 
 {% endfor %}
