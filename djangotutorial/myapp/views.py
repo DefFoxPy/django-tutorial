@@ -30,4 +30,7 @@ def tasks(request):
 	# task = Task.objects.get(pk=id) # consulta normal	
 	#task = get_object_or_404(Task, id=id)
 	#return HttpResponse("task: %s" % task.title)
-	return render(request, 'tasks.html')
+	tasks = Task.objects.all()
+	return render(request, 'tasks.html', {
+		'tasks': tasks
+	})
