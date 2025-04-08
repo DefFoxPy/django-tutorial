@@ -58,6 +58,8 @@ def create_project(request):
 def project_detail(request, id):
 	#project = Project.objects.get(id=id)
 	project = get_object_or_404(Project, id=id)
+	tasks = Task.objects.filter(project_id=id)
 	return render(request, 'projects/detail.html', {
-		'project': project
+		'project': project,
+		'tasks': tasks
 	})
