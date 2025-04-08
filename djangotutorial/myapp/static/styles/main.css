@@ -39,3 +39,10 @@ body {
 	padding: 10px;
 	margin-bottom: 2px;
 }
+
+.input {
+	background: wheat;
+	padding: 10px;
+	text-align: center;
+	display: block;	
+}
