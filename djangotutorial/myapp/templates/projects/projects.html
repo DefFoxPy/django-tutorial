@@ -7,7 +7,7 @@
 {% for project in projects %}
 
 <article class="card">
-	<a href="">
+	<a href="{% url 'project_detail' project.id %}">
 		<h1>{{ project }}</h1>
 	</a>
 </article>
