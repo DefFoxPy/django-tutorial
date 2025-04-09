@@ -1,2 +1,2 @@
 # django-tutorial
-[1.](https://github.com/DefFoxPy/django-tutorial/tree/main/djangotutorial) mi primera vez en django.
+[1.](https://github.com/DefFoxPy/django-tutorial/tree/main/gestor_proyectos_simple) Primer proyecto django - gestor de proyectos.
