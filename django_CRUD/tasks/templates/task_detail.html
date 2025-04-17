@@ -21,4 +21,11 @@
 	</button>
 </form>
 
+<form action="{% url 'delete_task' task.id %}" method="POST">
+	{% csrf_token %}
+	<button>
+		Delete
+	</button>
+</form>
+
 {% endblock %}
