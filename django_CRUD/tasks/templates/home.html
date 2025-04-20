@@ -2,6 +2,22 @@
 
 {% block content %}
 
-<h1>Home</h1>
+<main class="container py-5">
+	<section class="card  card-body">
+		<h1 class="display-1 text-center">Gestor de Tareas</h1>
+		<p>Texto que representa el home de mi aplicación de gestor de tareas</p>
+
+		<div class="text-center">
+			<a class="btn btn-secondary" href="{% url 'signin'%}">
+				Signin
+			</a>
+			<a class="btn btn-dark" href="{% url 'signup' %}">
+				Signup
+			</a>
+		</div>
+	</section>
+
+	
+</main>
 
 {% endblock %}
